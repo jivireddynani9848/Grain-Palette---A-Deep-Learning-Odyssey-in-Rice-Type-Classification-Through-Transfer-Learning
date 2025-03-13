@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Classification</title>
+    <style>
+        body {
+            background: url('/static/rice_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: black;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            width: 90%;
+            margin: 20px auto;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            border: 3px solid #ffcc00;
+        }
+        .rice-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .rice-card {
+            background: linear-gradient(to bottom, #fff5cc, #ffcc99);
+            margin: 15px;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ff6600;
+            transition: transform 0.3s ease-in-out;
+        }
+        .rice-card:hover {
+            transform: scale(1.05);
+        }
+        .rice-card img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ff6600;
+        }
+        a {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px;
+            background: linear-gradient(to right, #ffcc00, #ff6600);
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            border: 2px solid black;
+        }
+        a:hover {
+            background: linear-gradient(to right, #ff9900, #cc3300);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Rice Grain Classification</h1>
+    <p>This application classifies rice grains into different categories based on their shape, size, and texture.</p>
+    
+    <div class="container">
+        <h2>Rice Grain Types</h2>
+        <div class="rice-info">
+            <div class="rice-card">
+                <img src="/static/arborio.jpg" alt="Arborio Rice">
+                <h3>Arborio</h3>
+                <p>Arborio rice is a short-grain rice known for its creamy texture, often used in risottos.</p>
+            </div>
+            <div class="rice-card">
+                <img src="/static/basmati.jpg" alt="Basmati Rice">
+                <h3>Basmati</h3>
+                <p>Basmati rice is a long-grain aromatic rice widely used in Indian and Middle Eastern cuisines.</p>
+            </div>
+            <div class="rice-card">
+                <img src="/static/ipsala.jpg" alt="Ipsala Rice">
+                <h3>Ipsala</h3>
+                <p>Ipsala rice is a medium-grain variety grown in Turkey, known for its versatility in dishes.</p>
+            </div>
+            <div class="rice-card">
+                <img src="/static/jasmine.jpg" alt="Jasmine Rice">
+                <h3>Jasmine</h3>
+                <p>Jasmine rice is a fragrant long-grain rice, popular in Thai cuisine due to its floral aroma.</p>
+            </div>
+            <div class="rice-card">
+                <img src="/static/karacadag.jpg" alt="Karacadag Rice">
+                <h3>Karacadag</h3>
+                <p>Karacadag rice is a specialty rice from Turkey, known for its unique taste and texture.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Popular Rice Types in India</h2>
+        <div class="rice-info">
+            <div class="rice-card">
+                <img src="/static/sona_masoori.jpg" alt="Sona Masoori">
+                <h3>Sona Masoori</h3>
+                <p>A lightweight, aromatic rice variety primarily grown in Andhra Pradesh and Karnataka.</p>
+            </div>
+            <div class="rice-card">
+                <img src="/static/ponni.jpg" alt="Ponni Rice">
+                <h3>Ponni</h3>
+                <p>Ponni rice is a popular South Indian variety, known for its soft texture and quick cooking properties.</p>
+            </div>
+            <div class="rice-card">
+                <img src="/static/black_rice.jpg" alt="Black Rice">
+                <h3>Black Rice</h3>
+                <p>Also known as 'forbidden rice', it is rich in antioxidants and primarily cultivated in Manipur.</p>
+            </div>
+            <div class="rice-card">
+                <img src="/static/matta.jpg" alt="Matta Rice">
+                <h3>Matta Rice</h3>
+                <p>A bold and nutritious rice variety commonly used in Kerala for traditional meals.</p>
+            </div>
+        </div>
+    </div>
+    
+    <a href="/details">View Details</a>
+    <a href="/predict">Classify Rice</a>
+</body>
+</html>
